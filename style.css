@@ -1,0 +1,123 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,200&display=swap');
+
+nav{
+    background-color: rgb(26, 9, 26);
+    color: white;
+}
+
+nav ul{
+    list-style: none;
+    height: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.instruction{
+    margin-top: 1vw;
+    display: flex;
+    justify-content: center;
+    font-family:'Source Sans Pro', sans-serif;;
+}
+
+.directions{
+    margin-top: 2vw;
+    display: flex;
+    justify-content: center;
+}
+
+.wholecontainer{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.gamecontainer{
+    display: grid;
+    grid-template-columns: repeat(3,8vw);
+    grid-template-rows: repeat(3,8vw);
+}
+
+.box{
+    border: 1px solid;
+    font-size: 6vw;
+    /* remove it later */
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.box:hover{
+    background-color: rgb(248, 166, 248);
+}
+
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+#reset{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
